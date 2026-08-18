@@ -1,0 +1,546 @@
+{
+  "firstLayout": "",
+  "gdVersion": {
+    "build": 279,
+    "major": 5,
+    "minor": 6,
+    "revision": 0
+  },
+  "properties": {
+    "adaptGameResolutionAtRuntime": true,
+    "antialiasingMode": "MSAA",
+    "antialisingEnabledOnMobile": false,
+    "folderProject": true,
+    "orientation": "landscape",
+    "packageName": "com.example.gamename",
+    "pixelsRounding": false,
+    "projectUuid": "86b27eeb-f4b2-47df-bbdd-b750d63d7e0b",
+    "scaleMode": "nearest",
+    "sizeOnStartupMode": "",
+    "templateSlug": "starting-platformer-pixel",
+    "version": "1.0.0",
+    "name": "the game - Copy - Copy",
+    "description": "",
+    "author": "",
+    "windowWidth": 1280,
+    "windowHeight": 720,
+    "latestCompilationDirectory": "",
+    "maxFPS": 60,
+    "minFPS": 20,
+    "verticalSync": false,
+    "platformSpecificAssets": {
+      "android-icon-144": "",
+      "android-icon-192": "",
+      "android-icon-36": "",
+      "android-icon-48": "",
+      "android-icon-72": "",
+      "android-icon-96": "",
+      "android-windowSplashScreenAnimatedIcon": "",
+      "desktop-icon-512": "",
+      "ios-icon-100": "",
+      "ios-icon-1024": "",
+      "ios-icon-114": "",
+      "ios-icon-120": "",
+      "ios-icon-144": "",
+      "ios-icon-152": "",
+      "ios-icon-167": "",
+      "ios-icon-180": "",
+      "ios-icon-20": "",
+      "ios-icon-29": "",
+      "ios-icon-40": "",
+      "ios-icon-50": "",
+      "ios-icon-57": "",
+      "ios-icon-58": "",
+      "ios-icon-60": "",
+      "ios-icon-72": "",
+      "ios-icon-76": "",
+      "ios-icon-80": "",
+      "ios-icon-87": ""
+    },
+    "loadingScreen": {
+      "backgroundColor": 0,
+      "backgroundFadeInDuration": 0.2,
+      "backgroundImageResourceName": "",
+      "gdevelopLogoStyle": "light",
+      "logoAndProgressFadeInDuration": 0.2,
+      "logoAndProgressLogoFadeInDelay": 0,
+      "minDuration": 1.5,
+      "progressBarColor": 16777215,
+      "progressBarHeight": 20,
+      "progressBarMaxWidth": 200,
+      "progressBarMinWidth": 40,
+      "progressBarWidthPercent": 30,
+      "showGDevelopSplash": true,
+      "showProgressBar": true
+    },
+    "watermark": {
+      "placement": "bottom-left",
+      "showWatermark": true
+    },
+    "authorIds": [],
+    "authorUsernames": [],
+    "categories": [],
+    "playableDevices": [],
+    "extensionProperties": [],
+    "platforms": [
+      {
+        "name": "GDevelop JS platform"
+      }
+    ],
+    "currentPlatform": "GDevelop JS platform"
+  },
+  "resources": {
+    "resources": [
+      {
+        "file": "assets/Top arrow button.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Top arrow button.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/On-Screen Controls/Sprites/Flat Dark/e3943e1b23ceb90f00fc5e7c0481c5147b983fdc5397fb3690e102e53ce72d4f_Top arrow button.png",
+          "name": "Top arrow button.png"
+        }
+      },
+      {
+        "file": "assets/Flat dark joystick border.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Flat dark joystick border.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Multitouch joysticks/1db606cabd7372d1494ba5934bc25bcdd72f5a213c4a27509be57c3f4d5aecca_Flat dark joystick border.png",
+          "name": "Flat dark joystick border.png"
+        }
+      },
+      {
+        "file": "assets/Flat dark joystick thumb.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Flat dark joystick thumb.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Multitouch joysticks/10167ade22c4a6b48324e6c1d1bd6dc74179d7bed0775890903f418b4a05c8a1_Flat dark joystick thumb.png",
+          "name": "Flat dark joystick thumb.png"
+        }
+      },
+      {
+        "file": "assets/StartingPixelPlayer.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\StartingPixelPlayer.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/PixelBackground.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\PixelBackground.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/StartingPixelGround.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\StartingPixelGround.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/StartingPixelCoin.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\StartingPixelCoin.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/CoinPickUp.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/CoinPickUp.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/pixilart-drawing.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "pixilart-drawing.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/27e50a69-1593-4401-95da-3e51b4506ab4/resources/28bfb1149a2a38ba54e72cc25275c2b3dd10e506e427867aa7ed9a312ab8ad9f-pixilart-drawing.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/NewSprite.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Kenney Pixel.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "Kenney Pixel.ttf",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Kenney Font Pack/490034af0b44b2d8e88911e4b30bf82a51e9fd67c1688a44a9c36e10ea360cd8_Kenney Pixel.ttf",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "assets/NewSprite3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Thick Pixel Heart Resource Bar Separated Empty.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Thick Pixel Heart Resource Bar Separated Empty.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/Kenney/Pixel art/78ed7886651994ac95d036243be2d0e17669fb1eaee21753da768799884c7ddf_Thick Pixel Heart Resource Bar Separated Empty.png",
+          "name": "Thick Pixel Heart Resource Bar Separated Empty.png"
+        }
+      },
+      {
+        "file": "assets/Thick Pixel Heart Resource Bar Separated Filled.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Thick Pixel Heart Resource Bar Separated Filled.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/Kenney/Pixel art/71584c59ccd5d7e12522fc18fbd8dc34b50acfb0a9901fd351dbd129be5b4134_Thick Pixel Heart Resource Bar Separated Filled.png",
+          "name": "Thick Pixel Heart Resource Bar Separated Filled.png"
+        }
+      },
+      {
+        "file": "assets/tiled_Tiled Empty UI Heart.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tiled_Tiled Empty UI Heart.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/688519c5bb4abaf5805518633f2ff810928e29164497fb5c13dabf97044be843_tiled_Tiled Empty UI Heart.png",
+          "name": "tiled_Tiled Empty UI Heart.png"
+        }
+      },
+      {
+        "file": "assets/tiled_Tiled Filler UI Heart.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tiled_Tiled Filler UI Heart.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/5b5c6c85ec4e1f5b6688be565c9a06920a76ee191915738afd61da1481fd6493_tiled_Tiled Filler UI Heart.png",
+          "name": "tiled_Tiled Filler UI Heart.png"
+        }
+      },
+      {
+        "file": "assets/NewSprite4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite4",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite5",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite6",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite7.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite7",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite8.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NewSprite8.png\"}",
+        "name": "NewSprite8",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite9.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite9",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sfx_hurt.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "b78a7094de394de59ccae643c7e862fe6b2f51c63e7a9dd91121b9b753e06bd9_sfx_hurt.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Kenney New Platformer Pack 1.0/Sounds/b78a7094de394de59ccae643c7e862fe6b2f51c63e7a9dd91121b9b753e06bd9_sfx_hurt.ogg",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "assets/health_1.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "health_1",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite10.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NewSprite10.png\"}",
+        "name": "NewSprite10",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite10.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/NewSprite10.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/health_2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "health_2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/health_3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "health_3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/1up 9.aac",
+        "kind": "audio",
+        "metadata": "",
+        "name": "cf3d278e28f6f631da5883429db0f100b27b1e2ef94ad12cfedafbb1c5b61136_1up 9.aac",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Arcade/Sound effects/1up/cf3d278e28f6f631da5883429db0f100b27b1e2ef94ad12cfedafbb1c5b61136_1up 9.aac",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "assets/health_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/health_3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/health_4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "health_4",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/health_5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "health_5",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/health_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/health_4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/health_5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/health_5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Confirm_06.aac",
+        "kind": "audio",
+        "metadata": "",
+        "name": "16a246c50b71169ec2e6755ee557ee40a70adf4e8de1370f602712c8e9db8132_Confirm_06.aac",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Interface/Interface Bleeps/16a246c50b71169ec2e6755ee557ee40a70adf4e8de1370f602712c8e9db8132_Confirm_06.aac",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "assets/Walk_02.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "6e7f6f4f07457e5c074202497f9b57fd8b48f2ed196d3cf2224d208023dbe8b7_Walk_02.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/SoundEffects/Nox Footsteps/DirtyGround/Walk/6e7f6f4f07457e5c074202497f9b57fd8b48f2ed196d3cf2224d208023dbe8b7_Walk_02.wav",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "assets/Run_04.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "5a67cb522be478fd9d1eb5dcb430f0a7b63395cc2a4b2241c0fe7c0d65121562_Run_04.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/SoundEffects/Nox Footsteps/Gravel/Run/5a67cb522be478fd9d1eb5dcb430f0a7b63395cc2a4b2241c0fe7c0d65121562_Run_04.wav",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "assets/NewSprite11.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite11",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/death.aac",
+        "kind": "audio",
+        "metadata": "",
+        "name": "8801d2d6cde766d642136e3fb8749862146cc40b5ed144379f7ff14315c489f7_death.aac",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/GDevelop examples/Platformer/Audio/8801d2d6cde766d642136e3fb8749862146cc40b5ed144379f7ff14315c489f7_death.aac",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "assets/Dark Shoot.aac",
+        "kind": "audio",
+        "metadata": "",
+        "name": "13b98ab429c693bf660148b445e24a2390947d4190b5a8d171b517ec15914be2_Dark Shoot.aac",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Space Shooter by Pixel boy/Sound/13b98ab429c693bf660148b445e24a2390947d4190b5a8d171b517ec15914be2_Dark Shoot.aac",
+          "name": "gdevelop-asset-store"
+        }
+      }
+    ]
+  },
+  "objects": [],
+  "objectsFolderStructure": {
+    "folderName": "__ROOT"
+  },
+  "objectsGroups": [],
+  "variables": [
+    {
+      "name": "petal",
+      "persistentUuid": "612ab7cf-df83-416c-80d1-05e8316cd5b3",
+      "type": "number",
+      "value": 0
+    }
+  ],
+  "layouts": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/game-scene"
+    }
+  ],
+  "externalEvents": [],
+  "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/buttonstates"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/spritemultitouchjoystick"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/smoothcamera"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/health"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/tiledunitsbar"
+    }
+  ],
+  "externalLayouts": []
+}

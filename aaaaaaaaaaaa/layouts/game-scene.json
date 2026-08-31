@@ -5,7 +5,7 @@
   "name": "Game Scene",
   "r": 255,
   "standardSortMethod": true,
-  "stopSoundsOnStartup": true,
+  "stopSoundsOnStartup": false,
   "title": "",
   "v": 255,
   "uiSettings": {
@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.6672773998330185,
+    "zoomFactor": 0.7876290101674012,
     "windowMask": true,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -29,27 +29,12 @@
   "variables": [
     {
       "name": "health",
+      "persistentUuid": "9f90c199-29e1-4cc2-8b75-e9467603bee9",
       "type": "number",
       "value": 3
     }
   ],
   "instances": [
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 78.99999999999999,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Player",
-      "persistentUuid": "4ded1d81-e820-41d3-868a-3f314e5850bd",
-      "width": 79,
-      "x": 384,
-      "y": 304,
-      "zOrder": 1,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
     {
       "angle": 0,
       "customSize": true,
@@ -161,8 +146,8 @@
       "name": "enemy",
       "persistentUuid": "01210bc8-4b6f-4c14-8378-8aa4f4dd0f90",
       "width": 34,
-      "x": 627,
-      "y": 411,
+      "x": 638,
+      "y": 416,
       "zOrder": 7,
       "numberProperties": [],
       "stringProperties": [],
@@ -483,6 +468,22 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Player",
+      "persistentUuid": "5a31478a-b27c-4ae2-a929-3441ca406f1f",
+      "width": 0,
+      "x": 416,
+      "y": 320,
+      "zOrder": 26,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -496,34 +497,6 @@
       "variables": [],
       "effects": [],
       "behaviors": [
-        {
-          "name": "Health",
-          "type": "Health::Health",
-          "Health": 100,
-          "CurrentHealth": 0,
-          "MaxHealth": 100,
-          "DamageCooldown": 0,
-          "AllowOverHealing": false,
-          "IsHealthJustDamaged": false,
-          "DamageToBeApplied": 0,
-          "HitAtLeastOnce": false,
-          "ChanceToDodge": 0,
-          "IsJustDodged": false,
-          "HealToBeApplied": 0,
-          "HealthRegenRate": 0,
-          "HealthRegenDelay": 0,
-          "IsJustHealed": false,
-          "CurrentShieldPoints": 0,
-          "MaxShieldPoints": 0,
-          "ShieldDuration": 5,
-          "ShieldRegenRate": 0,
-          "BlockExcessDamage": false,
-          "ShieldRegenDelay": 0,
-          "IsShieldJustDamaged": false,
-          "ShieldDamageTaken": 0,
-          "FlatDamageReduction": 0,
-          "PercentDamageReduction": 0
-        },
         {
           "isFolded": true,
           "name": "PlatformerMultitouchMapper",
@@ -618,7 +591,18 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets\\StartingPixelPlayer.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "Point",
+                      "x": 32,
+                      "y": 16
+                    },
+                    {
+                      "name": "Point2",
+                      "x": 0,
+                      "y": 16
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
@@ -1587,6 +1571,134 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "pewpew",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "FireBullet",
+          "type": "FireBullet::FireBullet",
+          "FireCooldown": 0.1,
+          "HasJustFired": false,
+          "RotateBullet": true,
+          "FiringArc": 45,
+          "BulletQuantity": 1,
+          "AngleVariance": 0,
+          "BulletSpeedVariance": 0,
+          "AmmoQuantity": 0,
+          "ShotsPerReload": 0,
+          "ReloadDuration": 1,
+          "MaxAmmo": 0,
+          "ShotsBeforeNextReload": 0,
+          "TotalShotsFired": 0,
+          "TotalBulletsCreated": 0,
+          "StartingAmmo": 0,
+          "TotalReloadsCompleted": 0,
+          "UnlimitedAmmo": true,
+          "ReloadInProgress": false,
+          "HeatIncreasePerShot": 0,
+          "HeatLevel": 0,
+          "AutomaticReloading": true,
+          "OverheatDuration": 0,
+          "LinearCoolingRate": 0.1,
+          "ExponentialCoolingRate": 0.3,
+          "BulletLayer": "",
+          "RandomizedAngle": 0
+        }
+      ],
+      "animations": [
+        {
+          "name": "NewSprite",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.2,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite13",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 10,
+                        "y": 23
+                      },
+                      {
+                        "x": 54,
+                        "y": 23
+                      },
+                      {
+                        "x": 54,
+                        "y": 40
+                      },
+                      {
+                        "x": 10,
+                        "y": 40
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite14",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 10,
+                        "y": 23
+                      },
+                      {
+                        "x": 54,
+                        "y": 23
+                      },
+                      {
+                        "x": 54,
+                        "y": 40
+                      },
+                      {
+                        "x": 10,
+                        "y": 40
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -1641,6 +1753,9 @@
       },
       {
         "objectName": "extra_health"
+      },
+      {
+        "objectName": "pewpew"
       }
     ]
   },
@@ -1699,14 +1814,6 @@
             "=",
             "3"
           ]
-        },
-        {
-          "type": {
-            "value": "Hide"
-          },
-          "parameters": [
-            "extra_health"
-          ]
         }
       ]
     },
@@ -1719,6 +1826,66 @@
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Player",
+                "End_level",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "petal",
+                ">=",
+                "5"
+              ]
+            },
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "health",
+                ">=",
+                "1"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "cf3d278e28f6f631da5883429db0f100b27b1e2ef94ad12cfedafbb1c5b61136_1up 9.aac",
+                "no",
+                "90",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PushScene"
+              },
+              "parameters": [
+                "",
+                "\"winner\""
+              ]
+            }
+          ]
+        },
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -1779,63 +1946,142 @@
               ]
             }
           ]
-        },
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Shoot",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "value": "CollisionNP"
+                "value": "KeyFromTextPressed"
+              },
+              "parameters": [
+                "",
+                "\"r\""
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "FlippableCapability::FlippableBehavior::FlippedX"
               },
               "parameters": [
                 "Player",
-                "End_level",
-                "",
-                "",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "NumberVariable"
-              },
-              "parameters": [
-                "petal",
-                ">=",
-                "5"
-              ]
-            },
-            {
-              "type": {
-                "value": "NumberVariable"
-              },
-              "parameters": [
-                "health",
-                ">=",
-                "1"
+                "Flippable"
               ]
             }
           ],
           "actions": [
             {
               "type": {
-                "value": "PushScene"
+                "value": "FlippableCapability::FlippableBehavior::FlipX"
               },
               "parameters": [
-                "",
-                "\"Game Scene\""
+                "Player",
+                "Flippable",
+                "yes"
               ]
             },
             {
               "type": {
-                "value": "PlaySound"
+                "value": "Create"
               },
               "parameters": [
                 "",
-                "cf3d278e28f6f631da5883429db0f100b27b1e2ef94ad12cfedafbb1c5b61136_1up 9.aac",
-                "",
-                "90",
+                "pewpew",
+                "Player.X()-32",
+                "Player.Y()-16",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "AddForceXY"
+              },
+              "parameters": [
+                "pewpew",
+                "200",
+                "0",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextPressed"
+              },
+              "parameters": [
+                "",
+                "\"l\""
+              ]
+            },
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlippedX"
+              },
+              "parameters": [
+                "Player",
+                "Flippable"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlipX"
+              },
+              "parameters": [
+                "Player",
+                "Flippable",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "pewpew",
+                "Player.X()",
+                "Player.Y()-16",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "AddForceXY"
+              },
+              "parameters": [
+                "pewpew",
+                "-200",
+                "0",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlipX"
+              },
+              "parameters": [
+                "pewpew",
+                "Flippable",
+                "yes"
               ]
             }
           ]
@@ -1852,53 +2098,6 @@
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "Player",
-                "enemy",
-                "",
-                "",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "health",
-                "-",
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "PlaySound"
-              },
-              "parameters": [
-                "",
-                "b78a7094de394de59ccae643c7e862fe6b2f51c63e7a9dd91121b9b753e06bd9_sfx_hurt.ogg",
-                "",
-                "80",
-                ""
-              ]
-            }
-          ]
-        },
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -2122,24 +2321,6 @@
           "conditions": [
             {
               "type": {
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "Player",
-                "more_health",
-                "",
-                "",
-                ""
-              ]
-            }
-          ],
-          "actions": []
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
                 "value": "NumberVariable"
               },
               "parameters": [
@@ -2250,7 +2431,7 @@
               },
               "parameters": [
                 "",
-                "\"Game Scene\""
+                "\"death\""
               ]
             }
           ]
@@ -2263,7 +2444,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "enemy",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -2278,7 +2458,7 @@
               "parameters": [
                 "enemy",
                 "Player",
-                "150",
+                "200",
                 ""
               ]
             }
@@ -2286,14 +2466,14 @@
           "actions": [
             {
               "type": {
-                "value": "PathfindingBehavior::SetDestination"
+                "value": "AddForceTowardPosition"
               },
               "parameters": [
                 "enemy",
-                "Pathfinding",
-                "",
                 "Player.X()",
-                "Player.Y()"
+                "Player.Y()",
+                "150\n",
+                "0"
               ]
             }
           ]
@@ -2308,7 +2488,7 @@
               "parameters": [
                 "enemy.Y()",
                 ">=",
-                "600"
+                "550"
               ]
             }
           ],
@@ -2329,25 +2509,72 @@
           "conditions": [
             {
               "type": {
-                "value": "BuiltinCommonInstructions::CompareNumbers"
+                "value": "CollisionNP"
               },
               "parameters": [
-                "enemy.Y()",
-                ">=",
-                "448"
+                "Player",
+                "enemy",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "health",
+                "-",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "b78a7094de394de59ccae643c7e862fe6b2f51c63e7a9dd91121b9b753e06bd9_sfx_hurt.ogg",
+                "",
+                "80",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "enemy",
+                "pewpew",
+                "",
+                "",
+                ""
               ]
             }
           ],
           "actions": [
             {
               "type": {
-                "value": "AddForceXY"
+                "value": "Delete"
               },
               "parameters": [
                 "enemy",
-                "0",
-                "100000",
-                "1"
+                ""
               ]
             }
           ]
@@ -2397,7 +2624,7 @@
           },
           "parameters": [
             "",
-            "\"Game Scene\""
+            "\"death\""
           ]
         }
       ]
@@ -2542,12 +2769,12 @@
       "type": "EffectCapability::EffectBehavior"
     },
     {
-      "name": "Flippable",
-      "type": "FlippableCapability::FlippableBehavior"
+      "name": "FireBullet",
+      "type": "FireBullet::FireBullet"
     },
     {
-      "name": "Health",
-      "type": "Health::Health"
+      "name": "Flippable",
+      "type": "FlippableCapability::FlippableBehavior"
     },
     {
       "name": "MultitouchButton",

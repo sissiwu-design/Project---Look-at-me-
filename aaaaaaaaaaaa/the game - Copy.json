@@ -1,7 +1,7 @@
 {
   "firstLayout": "",
   "gdVersion": {
-    "build": 279,
+    "build": 280,
     "major": 5,
     "minor": 6,
     "revision": 0
@@ -497,6 +497,77 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Space Shooter by Pixel boy/Sound/13b98ab429c693bf660148b445e24a2390947d4190b5a8d171b517ec15914be2_Dark Shoot.aac",
           "name": "gdevelop-asset-store"
         }
+      },
+      {
+        "file": "assets/NewSprite12.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite12",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite13.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NewSprite13.png\"}",
+        "name": "NewSprite13",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite14.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NewSprite14.png\"}",
+        "name": "NewSprite14",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite15.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite15",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite16.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite16",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Kenney Pixel.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "assets/Kenney Pixel.ttf",
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite17.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NewSprite17.png\"}",
+        "name": "NewSprite17",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite17.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/NewSprite17.png\",\"extension\":\".png\"}",
+        "name": "assets/NewSprite17.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite18.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets/NewSprite17",
+        "smoothed": false,
+        "userAdded": false
       }
     ]
   },
@@ -517,6 +588,14 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/game-scene"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/death"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/winner"
     }
   ],
   "externalEvents": [],

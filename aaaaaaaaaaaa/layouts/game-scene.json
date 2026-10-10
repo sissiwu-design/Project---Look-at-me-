@@ -20,20 +20,13 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.7876290101674012,
+    "zoomFactor": 0.6455105703311705,
     "windowMask": true,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
   },
   "objectsGroups": [],
-  "variables": [
-    {
-      "name": "health",
-      "persistentUuid": "9f90c199-29e1-4cc2-8b75-e9467603bee9",
-      "type": "number",
-      "value": 3
-    }
-  ],
+  "variables": [],
   "instances": [
     {
       "angle": 0,
@@ -231,7 +224,7 @@
       "persistentUuid": "95c9837b-f58f-45eb-bec9-75755b5d673c",
       "width": 160,
       "x": 576,
-      "y": 288,
+      "y": 256,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -278,8 +271,8 @@
       "name": "Petal",
       "persistentUuid": "ea2657ea-3a8d-4812-ac07-92f66cedd740",
       "width": 0,
-      "x": 672,
-      "y": 256,
+      "x": 640,
+      "y": 224,
       "zOrder": 14,
       "numberProperties": [],
       "stringProperties": [],
@@ -480,7 +473,24 @@
       "width": 0,
       "x": 416,
       "y": 320,
-      "zOrder": 26,
+      "zOrder": 28,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 28,
+      "keepRatio": true,
+      "layer": "",
+      "name": "instructions",
+      "persistentUuid": "54a6ca01-33d3-46b9-9306-26a7de770e51",
+      "width": 173,
+      "x": 352,
+      "y": 224,
+      "zOrder": 27,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -509,6 +519,7 @@
         {
           "name": "PlatformerObject",
           "type": "PlatformBehavior::PlatformerObjectBehavior",
+          "ignoreDefaultControls": false,
           "acceleration": 1000,
           "deceleration": 750,
           "gravity": 525,
@@ -519,7 +530,6 @@
           "canGoDownFromJumpthru": true,
           "canGrabPlatforms": false,
           "canGrabWithoutMoving": false,
-          "ignoreDefaultControls": false,
           "ladderClimbingSpeed": 200,
           "slopeMaxAngle": 60,
           "useLegacyTrajectory": false,
@@ -1699,6 +1709,49 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "instructions",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Press \"Q\" to shoot\nPress \"A\" to pause the game",
+      "font": "assets/Kenney Pixel.ttf",
+      "textAlignment": "left",
+      "characterSize": 30,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 0,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Press \"Q\" to shoot\nPress \"A\" to pause the game",
+        "font": "assets/Kenney Pixel.ttf",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 30,
+        "lineHeight": 0,
+        "color": "0;0;0"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -1756,6 +1809,9 @@
       },
       {
         "objectName": "pewpew"
+      },
+      {
+        "objectName": "instructions"
       }
     ]
   },
@@ -1818,6 +1874,185 @@
       ]
     },
     {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "KeyFromTextPressed"
+          },
+          "parameters": [
+            "",
+            "\"a\""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "PushScene"
+          },
+          "parameters": [
+            "",
+            "\"pause\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::CompareNumbers"
+          },
+          "parameters": [
+            "Player.Y()",
+            ">=",
+            "600"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "Player",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "13b98ab429c693bf660148b445e24a2390947d4190b5a8d171b517ec15914be2_Dark Shoot.aac",
+            "",
+            "70",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "PushScene"
+          },
+          "parameters": [
+            "",
+            "\"death\""
+          ]
+        }
+      ]
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "movement",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextPressed"
+              },
+              "parameters": [
+                "",
+                "\"Up\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlatformBehavior::SimulateJumpKey"
+              },
+              "parameters": [
+                "Player",
+                "PlatformerObject"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextPressed"
+              },
+              "parameters": [
+                "",
+                "\"Right\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlipX"
+              },
+              "parameters": [
+                "Player",
+                "Flippable",
+                "no"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextPressed"
+              },
+              "parameters": [
+                "",
+                "\"Left\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlipX"
+              },
+              "parameters": [
+                "Player",
+                "Flippable",
+                "yes"
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
       "colorB": 228,
       "colorG": 176,
       "colorR": 74,
@@ -1849,16 +2084,6 @@
                 "petal",
                 ">=",
                 "5"
-              ]
-            },
-            {
-              "type": {
-                "value": "NumberVariable"
-              },
-              "parameters": [
-                "health",
-                ">=",
-                "1"
               ]
             }
           ],
@@ -1968,7 +2193,7 @@
               },
               "parameters": [
                 "",
-                "\"r\""
+                "\"q\""
               ]
             },
             {
@@ -1980,19 +2205,15 @@
                 "Player",
                 "Flippable"
               ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
             }
           ],
           "actions": [
-            {
-              "type": {
-                "value": "FlippableCapability::FlippableBehavior::FlipX"
-              },
-              "parameters": [
-                "Player",
-                "Flippable",
-                "yes"
-              ]
-            },
             {
               "type": {
                 "value": "Create"
@@ -2011,7 +2232,7 @@
               },
               "parameters": [
                 "pewpew",
-                "200",
+                "250",
                 "0",
                 "1"
               ]
@@ -2027,7 +2248,7 @@
               },
               "parameters": [
                 "",
-                "\"l\""
+                "\"q\""
               ]
             },
             {
@@ -2038,19 +2259,15 @@
                 "Player",
                 "Flippable"
               ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
             }
           ],
           "actions": [
-            {
-              "type": {
-                "value": "FlippableCapability::FlippableBehavior::FlipX"
-              },
-              "parameters": [
-                "Player",
-                "Flippable",
-                "no"
-              ]
-            },
             {
               "type": {
                 "value": "Create"
@@ -2069,7 +2286,7 @@
               },
               "parameters": [
                 "pewpew",
-                "-200",
+                "-250",
                 "0",
                 "1"
               ]
@@ -2082,6 +2299,34 @@
                 "pewpew",
                 "Flippable",
                 "yes"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "Distance"
+              },
+              "parameters": [
+                "Player",
+                "pewpew",
+                "300",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "pewpew",
+                ""
               ]
             }
           ]
@@ -2458,7 +2703,7 @@
               "parameters": [
                 "enemy",
                 "Player",
-                "200",
+                "250",
                 ""
               ]
             }
@@ -2581,53 +2826,6 @@
         }
       ],
       "parameters": []
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "BuiltinCommonInstructions::CompareNumbers"
-          },
-          "parameters": [
-            "Player.Y()",
-            ">=",
-            "600"
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "Delete"
-          },
-          "parameters": [
-            "Player",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "PlaySound"
-          },
-          "parameters": [
-            "",
-            "13b98ab429c693bf660148b445e24a2390947d4190b5a8d171b517ec15914be2_Dark Shoot.aac",
-            "",
-            "70",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "PushScene"
-          },
-          "parameters": [
-            "",
-            "\"death\""
-          ]
-        }
-      ]
     }
   ],
   "layers": [

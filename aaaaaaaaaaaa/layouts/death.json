@@ -20,7 +20,7 @@
     "gridColor": 8227774,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 1.2121641972173725,
+    "zoomFactor": 0.3553434558817008,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -31,9 +31,6 @@
       "objects": [
         {
           "name": "restart"
-        },
-        {
-          "name": "restart_button"
         }
       ]
     }
@@ -45,44 +42,12 @@
       "customSize": false,
       "height": 0,
       "keepRatio": true,
-      "layer": "",
-      "name": "game_over",
-      "persistentUuid": "ebb80c1c-b13f-480a-b1f0-cf717021ea05",
+      "layer": "ui",
+      "name": "end2",
+      "persistentUuid": "509c057f-aadd-4c27-80c5-73a35a19bd65",
       "width": 0,
-      "x": 320,
-      "y": 160,
-      "zOrder": 4,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "end",
-      "persistentUuid": "dcac3309-47ec-4216-b205-21986a4cf2ce",
-      "width": 0,
-      "x": 448,
-      "y": 562,
-      "zOrder": 5,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "restart",
-      "persistentUuid": "c179eeb1-ffa5-47df-b32a-0ad7fd6efd1b",
-      "width": 0,
-      "x": 489,
-      "y": 352,
+      "x": 768,
+      "y": 448,
       "zOrder": 6,
       "numberProperties": [],
       "stringProperties": [],
@@ -90,34 +55,64 @@
     },
     {
       "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 192,
+      "customSize": false,
+      "height": 0,
       "keepRatio": true,
-      "layer": "",
-      "name": "restart_button",
-      "persistentUuid": "20d2a6b1-afc1-4c01-8460-8648a5570661",
-      "width": 416,
-      "x": 473,
-      "y": 317,
-      "zOrder": 3,
+      "layer": "ui",
+      "name": "end",
+      "persistentUuid": "d1cd101e-ebe9-43c8-bdac-adefdf6508d3",
+      "width": 0,
+      "x": 832,
+      "y": 640,
+      "zOrder": 7,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
     },
     {
       "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 192,
+      "customSize": false,
+      "height": 0,
       "keepRatio": true,
-      "layer": "",
-      "name": "NewSprite",
-      "persistentUuid": "f3359f8b-fb83-4582-a2cd-13aa445dc58b",
-      "width": 448,
-      "x": 448,
-      "y": 480,
-      "zOrder": 2,
+      "layer": "ui",
+      "name": "restart",
+      "persistentUuid": "126db29d-c108-41dc-bf51-94e00ff47053",
+      "width": 0,
+      "x": 544,
+      "y": 512,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "ui",
+      "name": "restart2",
+      "persistentUuid": "97a90d4f-7114-48f1-ae8c-a49ee5633923",
+      "width": 0,
+      "x": 352,
+      "y": 384,
+      "zOrder": 9,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "ui",
+      "name": "game_over",
+      "persistentUuid": "b8bc23e9-79eb-482a-b7e6-caded7b12cc7",
+      "width": 0,
+      "x": 288,
+      "y": 96,
+      "zOrder": 10,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -200,11 +195,11 @@
       },
       "content": {
         "bold": true,
-        "isOutlineEnabled": false,
+        "isOutlineEnabled": true,
         "isShadowEnabled": false,
         "italic": false,
-        "outlineColor": "255;255;255",
-        "outlineThickness": 2,
+        "outlineColor": "212;11;11",
+        "outlineThickness": 20,
         "shadowAngle": 90,
         "shadowBlurRadius": 2,
         "shadowColor": "0;0;0",
@@ -254,11 +249,11 @@
       },
       "content": {
         "bold": true,
-        "isOutlineEnabled": false,
+        "isOutlineEnabled": true,
         "isShadowEnabled": false,
         "italic": false,
-        "outlineColor": "255;255;255",
-        "outlineThickness": 2,
+        "outlineColor": "11;86;212",
+        "outlineThickness": 20,
         "shadowAngle": 90,
         "shadowBlurRadius": 2,
         "shadowColor": "0;0;0",
@@ -276,126 +271,114 @@
       }
     },
     {
-      "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
-      "name": "restart_button",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
+      "bold": true,
+      "italic": false,
+      "name": "restart2",
+      "persistentUuid": "0bb311c2-f6a6-4b5e-b9d1-30b0daac3ad8",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
       "variables": [],
       "effects": [],
-      "behaviors": [],
-      "animations": [
+      "behaviors": [
         {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "NewSprite17",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 12
-                      },
-                      {
-                        "x": 64,
-                        "y": 12
-                      },
-                      {
-                        "x": 64,
-                        "y": 49
-                      },
-                      {
-                        "x": 0,
-                        "y": 49
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
+          "name": "ButtonFSM",
+          "type": "ButtonStates::ButtonFSM",
+          "ShouldCheckHovering": true,
+          "State": "Idle",
+          "TouchId": 0,
+          "TouchIsInside": false,
+          "MouseIsInside": false,
+          "Index": 0
         }
-      ]
+      ],
+      "string": "RESTART",
+      "font": "assets/Kenney Pixel.ttf",
+      "textAlignment": "center",
+      "characterSize": 150,
+      "color": {
+        "b": 212,
+        "g": 86,
+        "r": 11
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 20,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "RESTART",
+        "font": "assets/Kenney Pixel.ttf",
+        "textAlignment": "center",
+        "verticalTextAlignment": "top",
+        "characterSize": 150,
+        "lineHeight": 0,
+        "color": "11;86;212"
+      }
     },
     {
-      "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
-      "name": "NewSprite",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
+      "bold": true,
+      "italic": false,
+      "name": "end2",
+      "persistentUuid": "d3f0f3bd-cab0-4a68-b1e3-21af50d85d66",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
       "variables": [],
       "effects": [],
-      "behaviors": [],
-      "animations": [
+      "behaviors": [
         {
-          "name": "assets/NewSprite17",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets/NewSprite17",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 12
-                      },
-                      {
-                        "x": 64,
-                        "y": 12
-                      },
-                      {
-                        "x": 64,
-                        "y": 49
-                      },
-                      {
-                        "x": 0,
-                        "y": 49
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
+          "name": "ButtonFSM",
+          "type": "ButtonStates::ButtonFSM",
+          "ShouldCheckHovering": true,
+          "State": "Idle",
+          "TouchId": 0,
+          "TouchIsInside": false,
+          "MouseIsInside": false,
+          "Index": 0
         }
-      ]
+      ],
+      "string": "END GAME",
+      "font": "assets/Kenney Pixel.ttf",
+      "textAlignment": "left",
+      "characterSize": 150,
+      "color": {
+        "b": 11,
+        "g": 11,
+        "r": 212
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 20,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "END GAME",
+        "font": "assets/Kenney Pixel.ttf",
+        "textAlignment": "left",
+        "verticalTextAlignment": "center",
+        "characterSize": 150,
+        "lineHeight": 0,
+        "color": "212;11;11"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -408,13 +391,13 @@
         "objectName": "end"
       },
       {
+        "objectName": "end2"
+      },
+      {
         "objectName": "restart"
       },
       {
-        "objectName": "restart_button"
-      },
-      {
-        "objectName": "NewSprite"
+        "objectName": "restart2"
       }
     ]
   },
@@ -437,7 +420,7 @@
             "value": "SetXY"
           },
           "parameters": [
-            "restart",
+            "restart2",
             "=",
             "CameraWidth(\"\", 0) / 2 - restart.Width() / 2",
             "=",
@@ -449,11 +432,11 @@
             "value": "SetXY"
           },
           "parameters": [
-            "restart_button",
+            "restart",
             "=",
             "CameraWidth(\"\", 0) / 2 - restart.Width() / 2",
             "=",
-            "317"
+            "352"
           ]
         },
         {
@@ -473,11 +456,39 @@
             "value": "SetXY"
           },
           "parameters": [
+            "end2",
+            "=",
+            "CameraWidth(\"\", 0) / 2 - end.Width() / 2",
+            "=",
+            "562"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetXY"
+          },
+          "parameters": [
             "end",
             "=",
             "CameraWidth(\"\", 0) / 2 - end.Width() / 2",
             "=",
             "562"
+          ]
+        },
+        {
+          "type": {
+            "value": "Hide"
+          },
+          "parameters": [
+            "restart2"
+          ]
+        },
+        {
+          "type": {
+            "value": "Hide"
+          },
+          "parameters": [
+            "end2"
           ]
         }
       ]
@@ -495,7 +506,67 @@
             "",
             ""
           ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Hide"
+          },
+          "parameters": [
+            "restart"
+          ]
         },
+        {
+          "type": {
+            "value": "Show"
+          },
+          "parameters": [
+            "restart2",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": true,
+            "value": "IsCursorOnObject"
+          },
+          "parameters": [
+            "restart",
+            "",
+            "",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Hide"
+          },
+          "parameters": [
+            "restart2"
+          ]
+        },
+        {
+          "type": {
+            "value": "Show"
+          },
+          "parameters": [
+            "restart",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
         {
           "type": {
             "value": "ButtonStates::ButtonFSM::IsPressed"
@@ -532,7 +603,67 @@
             "",
             ""
           ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Hide"
+          },
+          "parameters": [
+            "end"
+          ]
         },
+        {
+          "type": {
+            "value": "Show"
+          },
+          "parameters": [
+            "end2",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": true,
+            "value": "IsCursorOnObject"
+          },
+          "parameters": [
+            "end",
+            "",
+            "",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Hide"
+          },
+          "parameters": [
+            "end2"
+          ]
+        },
+        {
+          "type": {
+            "value": "Show"
+          },
+          "parameters": [
+            "end",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
         {
           "type": {
             "value": "ButtonStates::ButtonFSM::IsPressed"
@@ -621,13 +752,63 @@
           }
         }
       ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera2DPlaneMaxDrawingDistance": 5000,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "ui",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Ambient Hemisphere Light",
+          "doubleParameters": {
+            "elevation": 40,
+            "intensity": 0.33,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "groundColor": "127;127;127",
+            "skyColor": "255;255;255",
+            "top": "Z+"
+          },
+          "booleanParameters": {}
+        },
+        {
+          "effectType": "Scene3D::DirectionalLight",
+          "name": "3D Sun Light",
+          "doubleParameters": {
+            "distanceFromCamera": 1500,
+            "elevation": 40,
+            "frustumSize": 4000,
+            "intensity": 0.75,
+            "minimumShadowBias": 0,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "color": "255;255;255",
+            "shadowQuality": "medium",
+            "top": "Z+"
+          },
+          "booleanParameters": {
+            "isCastingShadow": true
+          }
+        }
+      ]
     }
   ],
   "behaviorsSharedData": [
-    {
-      "name": "Animation",
-      "type": "AnimatableCapability::AnimatableBehavior"
-    },
     {
       "name": "ButtonFSM",
       "type": "ButtonStates::ButtonFSM"
@@ -637,16 +818,8 @@
       "type": "EffectCapability::EffectBehavior"
     },
     {
-      "name": "Flippable",
-      "type": "FlippableCapability::FlippableBehavior"
-    },
-    {
       "name": "Opacity",
       "type": "OpacityCapability::OpacityBehavior"
-    },
-    {
-      "name": "Resizable",
-      "type": "ResizableCapability::ResizableBehavior"
     },
     {
       "name": "Scale",

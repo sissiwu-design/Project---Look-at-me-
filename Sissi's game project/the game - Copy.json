@@ -1,0 +1,1032 @@
+{
+  "firstLayout": "",
+  "gdVersion": {
+    "build": 284,
+    "major": 5,
+    "minor": 6,
+    "revision": 0
+  },
+  "properties": {
+    "adaptGameResolutionAtRuntime": true,
+    "antialiasingMode": "MSAA",
+    "antialisingEnabledOnMobile": false,
+    "folderProject": true,
+    "orientation": "landscape",
+    "packageName": "com.example.gamename",
+    "pixelsRounding": true,
+    "projectUuid": "86b27eeb-f4b2-47df-bbdd-b750d63d7e0b",
+    "scaleMode": "nearest",
+    "sizeOnStartupMode": "",
+    "templateSlug": "starting-platformer-pixel",
+    "version": "1.0.0",
+    "name": "Sissi's game",
+    "description": "",
+    "author": "",
+    "windowWidth": 1280,
+    "windowHeight": 720,
+    "latestCompilationDirectory": "",
+    "maxFPS": 60,
+    "minFPS": 20,
+    "verticalSync": false,
+    "platformSpecificAssets": {
+      "android-icon-144": "",
+      "android-icon-192": "",
+      "android-icon-36": "",
+      "android-icon-48": "",
+      "android-icon-72": "",
+      "android-icon-96": "",
+      "android-windowSplashScreenAnimatedIcon": "",
+      "desktop-icon-512": "",
+      "ios-icon-100": "",
+      "ios-icon-1024": "",
+      "ios-icon-114": "",
+      "ios-icon-120": "",
+      "ios-icon-144": "",
+      "ios-icon-152": "",
+      "ios-icon-167": "",
+      "ios-icon-180": "",
+      "ios-icon-20": "",
+      "ios-icon-29": "",
+      "ios-icon-40": "",
+      "ios-icon-50": "",
+      "ios-icon-57": "",
+      "ios-icon-58": "",
+      "ios-icon-60": "",
+      "ios-icon-72": "",
+      "ios-icon-76": "",
+      "ios-icon-80": "",
+      "ios-icon-87": ""
+    },
+    "loadingScreen": {
+      "backgroundColor": 0,
+      "backgroundFadeInDuration": 0.2,
+      "backgroundImageResourceName": "",
+      "gdevelopLogoStyle": "light",
+      "logoAndProgressFadeInDuration": 0.2,
+      "logoAndProgressLogoFadeInDelay": 0,
+      "minDuration": 1.5,
+      "progressBarColor": 16777215,
+      "progressBarHeight": 20,
+      "progressBarMaxWidth": 200,
+      "progressBarMinWidth": 40,
+      "progressBarWidthPercent": 30,
+      "showGDevelopSplash": true,
+      "showProgressBar": true
+    },
+    "watermark": {
+      "placement": "bottom-left",
+      "showWatermark": true
+    },
+    "authorIds": [],
+    "authorUsernames": [],
+    "categories": [],
+    "playableDevices": [],
+    "extensionProperties": [],
+    "platforms": [
+      {
+        "name": "GDevelop JS platform"
+      }
+    ],
+    "currentPlatform": "GDevelop JS platform"
+  },
+  "resources": {
+    "resources": [
+      {
+        "file": "assets/CoinPickUp.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/CoinPickUp.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Kenney Pixel.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "Kenney Pixel.ttf",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Kenney Font Pack/490034af0b44b2d8e88911e4b30bf82a51e9fd67c1688a44a9c36e10ea360cd8_Kenney Pixel.ttf",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "assets/sfx_hurt.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "b78a7094de394de59ccae643c7e862fe6b2f51c63e7a9dd91121b9b753e06bd9_sfx_hurt.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Kenney New Platformer Pack 1.0/Sounds/b78a7094de394de59ccae643c7e862fe6b2f51c63e7a9dd91121b9b753e06bd9_sfx_hurt.ogg",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "assets/1up 9.aac",
+        "kind": "audio",
+        "metadata": "",
+        "name": "cf3d278e28f6f631da5883429db0f100b27b1e2ef94ad12cfedafbb1c5b61136_1up 9.aac",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Arcade/Sound effects/1up/cf3d278e28f6f631da5883429db0f100b27b1e2ef94ad12cfedafbb1c5b61136_1up 9.aac",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "assets/Confirm_06.aac",
+        "kind": "audio",
+        "metadata": "",
+        "name": "16a246c50b71169ec2e6755ee557ee40a70adf4e8de1370f602712c8e9db8132_Confirm_06.aac",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Interface/Interface Bleeps/16a246c50b71169ec2e6755ee557ee40a70adf4e8de1370f602712c8e9db8132_Confirm_06.aac",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "assets/Walk_02.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "6e7f6f4f07457e5c074202497f9b57fd8b48f2ed196d3cf2224d208023dbe8b7_Walk_02.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/SoundEffects/Nox Footsteps/DirtyGround/Walk/6e7f6f4f07457e5c074202497f9b57fd8b48f2ed196d3cf2224d208023dbe8b7_Walk_02.wav",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "assets/Run_04.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "5a67cb522be478fd9d1eb5dcb430f0a7b63395cc2a4b2241c0fe7c0d65121562_Run_04.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/SoundEffects/Nox Footsteps/Gravel/Run/5a67cb522be478fd9d1eb5dcb430f0a7b63395cc2a4b2241c0fe7c0d65121562_Run_04.wav",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "assets/death.aac",
+        "kind": "audio",
+        "metadata": "",
+        "name": "8801d2d6cde766d642136e3fb8749862146cc40b5ed144379f7ff14315c489f7_death.aac",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/GDevelop examples/Platformer/Audio/8801d2d6cde766d642136e3fb8749862146cc40b5ed144379f7ff14315c489f7_death.aac",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "assets/Dark Shoot.aac",
+        "kind": "audio",
+        "metadata": "",
+        "name": "13b98ab429c693bf660148b445e24a2390947d4190b5a8d171b517ec15914be2_Dark Shoot.aac",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Space Shooter by Pixel boy/Sound/13b98ab429c693bf660148b445e24a2390947d4190b5a8d171b517ec15914be2_Dark Shoot.aac",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "assets/Kenney Pixel.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "assets/Kenney Pixel.ttf",
+        "userAdded": false
+      },
+      {
+        "file": "assets/8BitOperatorPlus8Regular_Edited.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\8BitOperatorPlus8Regular_Edited.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/Pixel art/15c1797cbcb41c3a753b6bbb21cfa60284cfaf81c9891c3abf78a8e0e1cacf59_8BitOperatorPlus8Regular_Edited.png",
+          "name": "8BitOperatorPlus8Regular_Edited.png"
+        }
+      },
+      {
+        "file": "assets/Small Red Button_Hovered.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Small Red Button_Hovered.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/Pixel art/d63b2fa1436235851bd03b8000942eb3deab31a96f6d3afec025cfebc329a370_Small Red Button_Hovered.png",
+          "name": "Small Red Button_Hovered.png"
+        }
+      },
+      {
+        "file": "assets/Small Red Button_Idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Small Red Button_Idle.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/Pixel art/de41b4dea946f89f15f694402f457883f08aa0d4f60edfd38dca601e82a5dd5e_Small Red Button_Idle.png",
+          "name": "Small Red Button_Idle.png"
+        }
+      },
+      {
+        "file": "assets/Small Red Button_Pressed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Small Red Button_Pressed.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/Pixel art/290ec24f0eb40e1cebd908a215ed5e6d36dea97c835bf3280c17f3e3f30243dd_Small Red Button_Pressed.png",
+          "name": "Small Red Button_Pressed.png"
+        }
+      },
+      {
+        "file": "assets/8BitOperatorPlus8Regular_Edited.fnt",
+        "kind": "bitmapFont",
+        "metadata": "",
+        "name": "assets\\8BitOperatorPlus8Regular_Edited.fnt",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/Pixel art/6b410f07a3a02e721a49d41795e84b56707ef28ac4d095d55f1fd1093760e134_8BitOperatorPlus8Regular_Edited.fnt",
+          "name": "8BitOperatorPlus8Regular_Edited.fnt"
+        }
+      },
+      {
+        "file": "assets/Click_02.aac",
+        "kind": "audio",
+        "metadata": "",
+        "name": "923517cfc7f1500e851f0bbcdd357fe2b982745b128fcb3acc40d1a229575882_Click_02.aac",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Interface/Interface Bleeps/923517cfc7f1500e851f0bbcdd357fe2b982745b128fcb3acc40d1a229575882_Click_02.aac",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "assets/Click_02.aac",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/Click_02.aac",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Confirm_07.aac",
+        "kind": "audio",
+        "metadata": "",
+        "name": "222c4c4667ba3a363e40fbabfd8254fb486e4bb4881207587dc0ad7fa1ab5a99_Confirm_07.aac",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Interface/Interface Bleeps/222c4c4667ba3a363e40fbabfd8254fb486e4bb4881207587dc0ad7fa1ab5a99_Confirm_07.aac",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "assets/Small Blue Button_Hovered.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Small Blue Button_Hovered.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/Pixel art/f80ae062891a0a4612c0160ed931165461392019f89a8545f28c195f645ebc48_Small Blue Button_Hovered.png",
+          "name": "Small Blue Button_Hovered.png"
+        }
+      },
+      {
+        "file": "assets/Small Blue Button_Idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Small Blue Button_Idle.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/Pixel art/c22b15c77047f1545806141e1129900bdc985d191b7ab5ebaae834a90c270ed2_Small Blue Button_Idle.png",
+          "name": "Small Blue Button_Idle.png"
+        }
+      },
+      {
+        "file": "assets/Small Blue Button_Pressed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Small Blue Button_Pressed.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/Pixel art/9e01b09016c6a200b53a55cac3cf34f083785eb6b9f55de490a71ad352858b36_Small Blue Button_Pressed.png",
+          "name": "Small Blue Button_Pressed.png"
+        }
+      },
+      {
+        "file": "assets/1up 9.aac",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/1up 9.aac",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/death.aac",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/death.aac",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Inspiration.aac",
+        "kind": "audio",
+        "metadata": "",
+        "name": "eaef54796c4a5aa7294b2bdcd2350ddfea09c0a5c08c96a83486a8b57639a328_Inspiration.aac",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Music/FreePD/Uplifting/eaef54796c4a5aa7294b2bdcd2350ddfea09c0a5c08c96a83486a8b57639a328_Inspiration.aac",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "assets/Forest Frolic Loop.aac",
+        "kind": "audio",
+        "metadata": "",
+        "name": "a980e8e6522654499e648e745995fd104bd4354a2fc573991763b19445ced01c_Forest Frolic Loop.aac",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Music/FreePD/World/a980e8e6522654499e648e745995fd104bd4354a2fc573991763b19445ced01c_Forest Frolic Loop.aac",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "assets/Gold 1.aac",
+        "kind": "audio",
+        "metadata": "",
+        "name": "97701ff6384d4127d73de32c166e50e4e65cf893c7f781956fe966f192812d0b_Gold 1.aac",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Space Shooter by Pixel boy/Sound/97701ff6384d4127d73de32c166e50e4e65cf893c7f781956fe966f192812d0b_Gold 1.aac",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "assets/Dark Shoot.aac",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/Dark Shoot.aac",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sfx_hurt.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sfx_hurt.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Small Yellow Button_Hovered.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Small Yellow Button_Hovered.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/Pixel art/87e56f0479104cf24b54c56800e8f5e0c5e15464b378e869774defaa8bc64b24_Small Yellow Button_Hovered.png",
+          "name": "Small Yellow Button_Hovered.png"
+        }
+      },
+      {
+        "file": "assets/Small Yellow Button_Idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Small Yellow Button_Idle.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/Pixel art/c6fd4f7ea3ed645b5c6358f54627df585f491db581c5cd4a9eb8ed4917d41fbc_Small Yellow Button_Idle.png",
+          "name": "Small Yellow Button_Idle.png"
+        }
+      },
+      {
+        "file": "assets/Small Yellow Button_Pressed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Small Yellow Button_Pressed.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/Pixel art/4805ce11be2d9a6b748f682efb227dbff84efba4cc2ce591238abe4faa4fa240_Small Yellow Button_Pressed.png",
+          "name": "Small Yellow Button_Pressed.png"
+        }
+      },
+      {
+        "file": "assets/Magical Transition.aac",
+        "kind": "audio",
+        "metadata": "",
+        "name": "47015d883b0004880ab7752e27507f434eb9617a17d9ab14fa543fe64a65fe02_Magical Transition.aac",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Music/FreePD/Fantasy/47015d883b0004880ab7752e27507f434eb9617a17d9ab14fa543fe64a65fe02_Magical Transition.aac",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "assets/Magical Transition.aac",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/Magical Transition.aac",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Forest Frolic Loop.aac",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/Forest Frolic Loop.aac",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Heroic Adventure.aac",
+        "kind": "audio",
+        "metadata": "",
+        "name": "74d770aabeb10cd79d173e06f56e7c6adc315e5651bfa404024ab878a1372afc_Heroic Adventure.aac",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Music/FreePD/Epic Dramatic/74d770aabeb10cd79d173e06f56e7c6adc315e5651bfa404024ab878a1372afc_Heroic Adventure.aac",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "assets/coin.aac",
+        "kind": "audio",
+        "metadata": "",
+        "name": "de880373f1471d9c0960e160c52e1ab6b0e50c737652c6d7d53490b4420c7089_coin.aac",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/GDevelop examples/Platformer/Audio/de880373f1471d9c0960e160c52e1ab6b0e50c737652c6d7d53490b4420c7089_coin.aac",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "assets/coin.aac",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/coin.aac",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Gold 1.aac",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/Gold 1.aac",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Small Grey Button_Hovered.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Small Grey Button_Hovered.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/Pixel art/71391fe38e15db05bf2b1c97baa7614d29fa5356eb85768828d008ee642adf54_Small Grey Button_Hovered.png",
+          "name": "Small Grey Button_Hovered.png"
+        }
+      },
+      {
+        "file": "assets/Small Grey Button_Idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Small Grey Button_Idle.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/Pixel art/1364d145f941a32e4bd4525752a92c7e6ea2d66aef650a338e5f3313aff024b2_Small Grey Button_Idle.png",
+          "name": "Small Grey Button_Idle.png"
+        }
+      },
+      {
+        "file": "assets/Small Grey Button_Pressed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Small Grey Button_Pressed.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/Pixel art/4a58f1d4e9a5a11004575379038809b9c41a54f30b5ce046de45a45786d9a95f_Small Grey Button_Pressed.png",
+          "name": "Small Grey Button_Pressed.png"
+        }
+      },
+      {
+        "file": "assets/Small Grey Button_Idle.png2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "assets\\Small Grey Button_Idle.png2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Small Light Grey Button_Hovered.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/Small Light Grey Button_Hovered.png\",\"extension\":\".png\",\"pskl\":{}}",
+        "name": "assets\\Small Light Grey Button_Hovered.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/Pixel art/95c8aec49aac6657a1b1870edcbafe98def8da6ced9ba38486ad54b16b11bd2e_Small Light Grey Button_Hovered.png",
+          "name": "Small Light Grey Button_Hovered.png"
+        }
+      },
+      {
+        "file": "assets/Small Light Grey Button_Idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Small Light Grey Button_Idle.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/Pixel art/80613a75f24d5c563b76fe4775c6bd66e8f5050eeaae279a556e41de62a1649d_Small Light Grey Button_Idle.png",
+          "name": "Small Light Grey Button_Idle.png"
+        }
+      },
+      {
+        "file": "assets/Small Light Grey Button_Pressed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Small Light Grey Button_Pressed.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/Pixel art/9bd7fdd350ae7a52dbe99d2ff6e0f6226656c6057aafe3c6e034cb6ef6616f4d_Small Light Grey Button_Pressed.png",
+          "name": "Small Light Grey Button_Pressed.png"
+        }
+      },
+      {
+        "file": "Tiny Platformer - Forest Asset Pack/Tiny Platformer - Forest Asset Pack/Background/Layer_01.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Tiny Platformer - Forest Asset Pack/Tiny Platformer - Forest Asset Pack/Background/Layer_01.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Tiny Platformer - Forest Asset Pack/Tiny Platformer - Forest Asset Pack/Background/Layer_02.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Tiny Platformer - Forest Asset Pack/Tiny Platformer - Forest Asset Pack/Background/Layer_02.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Tiny Platformer - Forest Asset Pack/Tiny Platformer - Forest Asset Pack/Background/Layer_03.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Tiny Platformer - Forest Asset Pack/Tiny Platformer - Forest Asset Pack/Background/Layer_03.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Tiny Platformer - Forest Asset Pack/Tiny Platformer - Forest Asset Pack/Tileset(16x16)/tile ground left corner.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Tiny Platformer - Forest Asset Pack/Tiny Platformer - Forest Asset Pack/Tileset(16x16)/tile ground left corner.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Tiny Platformer - Forest Asset Pack/Tiny Platformer - Forest Asset Pack/Tileset(16x16)/tile ground right corner.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"Tiny Platformer - Forest Asset Pack/Tiny Platformer - Forest Asset Pack/Tileset(16x16)/tile ground right corner.png\",\"extension\":\".png\"}",
+        "name": "Tiny Platformer - Forest Asset Pack/Tiny Platformer - Forest Asset Pack/Tileset(16x16)/tile ground right corner.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Tiny Platformer - Forest Asset Pack/Tiny Platformer - Forest Asset Pack/Tileset(16x16)/tile ground inside corner left.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"Tiny Platformer - Forest Asset Pack/Tiny Platformer - Forest Asset Pack/Tileset(16x16)/tile ground inside corner left.png\",\"extension\":\".png\"}",
+        "name": "Tiny Platformer - Forest Asset Pack/Tiny Platformer - Forest Asset Pack/Tileset(16x16)/tile ground inside corner left.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Tiny Platformer - Forest Asset Pack/Tiny Platformer - Forest Asset Pack/Tileset(16x16)/tile ground inside corner right.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"Tiny Platformer - Forest Asset Pack/Tiny Platformer - Forest Asset Pack/Tileset(16x16)/tile ground inside corner right.png\",\"extension\":\".png\"}",
+        "name": "Tiny Platformer - Forest Asset Pack/Tiny Platformer - Forest Asset Pack/Tileset(16x16)/tile ground inside corner right.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Hit 4.aac",
+        "kind": "audio",
+        "metadata": "",
+        "name": "a01a5e673d5b3c7319b145c85379f1212b603002d6eb7754d37d53fd4b675613_Hit 4.aac",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Arcade/Sound effects/Hit/a01a5e673d5b3c7319b145c85379f1212b603002d6eb7754d37d53fd4b675613_Hit 4.aac",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "Tiny Platformer - Forest Asset Pack/Tiny Platformer - Forest Asset Pack/Tileset(16x16)/Tileset.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Tiny Platformer - Forest Asset Pack/Tiny Platformer - Forest Asset Pack/Tileset(16x16)/Tileset.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Enchanted Forest - Individual Frames/Mushroom - Normal/NormalMushroom_Idle_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Enchanted Forest - Individual Frames/Mushroom - Normal/NormalMushroom_Idle_1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Enchanted Forest - Individual Frames/Mushroom - Normal/NormalMushroom_Idle_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Enchanted Forest - Individual Frames/Mushroom - Normal/NormalMushroom_Idle_2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Enchanted Forest - Individual Frames/Mushroom - Normal/NormalMushroom_Idle_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Enchanted Forest - Individual Frames/Mushroom - Normal/NormalMushroom_Idle_3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Enchanted Forest - Individual Frames/Mushroom - Normal/NormalMushroom_Idle_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Enchanted Forest - Individual Frames/Mushroom - Normal/NormalMushroom_Idle_4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Enchanted Forest - Individual Frames/Mushroom - Normal/NormalMushroom_Walk_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Enchanted Forest - Individual Frames/Mushroom - Normal/NormalMushroom_Walk_1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Enchanted Forest - Individual Frames/Mushroom - Normal/NormalMushroom_Walk_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Enchanted Forest - Individual Frames/Mushroom - Normal/NormalMushroom_Walk_2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Enchanted Forest - Individual Frames/Mushroom - Normal/NormalMushroom_Walk_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Enchanted Forest - Individual Frames/Mushroom - Normal/NormalMushroom_Walk_3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Enchanted Forest - Individual Frames/Mushroom - Normal/NormalMushroom_Walk_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Enchanted Forest - Individual Frames/Mushroom - Normal/NormalMushroom_Walk_4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/more_health.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/more_health.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/player idle 1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/player idle 1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/player idle 2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/player idle 2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Tiny Platformer - Forest Asset Pack/Tiny Platformer - Forest Asset Pack/Tileset(16x16)/ground variation 1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Tiny Platformer - Forest Asset Pack/Tiny Platformer - Forest Asset Pack/Tileset(16x16)/ground variation 1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Tiny Platformer - Forest Asset Pack/Tiny Platformer - Forest Asset Pack/Tileset(16x16)/ground variation 2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Tiny Platformer - Forest Asset Pack/Tiny Platformer - Forest Asset Pack/Tileset(16x16)/ground variation 2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/player walking 1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/player walking 1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/player walking 2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/player walking 2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/player walking 3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/player walking 3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/player walking 4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/player walking 4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/petal_key.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/petal_key.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/flower_door.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/flower_door.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/blue_heart.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/blue_heart.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/heart_outline.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/heart_outline.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/red_heart.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/red_heart.png\",\"extension\":\".png\"}",
+        "name": "assets/red_heart.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/health_1.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "health_1",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Tiny Platformer - Forest Asset Pack/Tiny Platformer - Forest Asset Pack/Tileset(16x16)/Tileset right side.png3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "Tiny Platformer - Forest Asset Pack/Tiny Platformer - Forest Asset Pack/Tileset(16x16)/Tileset right side.png2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Tiny Platformer - Forest Asset Pack/Tiny Platformer - Forest Asset Pack/Tileset(16x16)/Tileset middle.png3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "Tiny Platformer - Forest Asset Pack/Tiny Platformer - Forest Asset Pack/Tileset(16x16)/Tileset middle.png2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Tiny Platformer - Forest Asset Pack/Tiny Platformer - Forest Asset Pack/Tileset(16x16)/Tileset ground flat.png3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "Tiny Platformer - Forest Asset Pack/Tiny Platformer - Forest Asset Pack/Tileset(16x16)/Tileset ground flat.png2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Tiny Platformer - Forest Asset Pack/Tiny Platformer - Forest Asset Pack/Tileset(16x16)/Tileset left side.png3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "Tiny Platformer - Forest Asset Pack/Tiny Platformer - Forest Asset Pack/Tileset(16x16)/Tileset left side.png2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/background_closest_filler.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/background_closest_filler.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/back_button.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/back_button.png",
+        "smoothed": false,
+        "userAdded": false
+      }
+    ]
+  },
+  "objects": [],
+  "objectsFolderStructure": {
+    "folderName": "__ROOT"
+  },
+  "objectsGroups": [],
+  "variables": [
+    {
+      "name": "petal",
+      "persistentUuid": "612ab7cf-df83-416c-80d1-05e8316cd5b3",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "enemy_2_health",
+      "persistentUuid": "301b6a34-56c5-4839-8d10-d45e0eb19ed7",
+      "type": "number",
+      "value": 2
+    },
+    {
+      "name": "enemy_1_health",
+      "persistentUuid": "0048a311-a082-47e6-9da1-bfd4674051c8",
+      "type": "number",
+      "value": 2
+    }
+  ],
+  "layouts": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/beginning-scene"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/game-scene"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/death"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/winner"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/pause"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/tutorial"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/credits"
+    }
+  ],
+  "externalEvents": [],
+  "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/buttonstates"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/spritemultitouchjoystick"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/smoothcamera"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/health"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/tiledunitsbar"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/panelspritebutton"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/advancedjump"
+    }
+  ],
+  "externalLayouts": []
+}
